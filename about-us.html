@@ -1,0 +1,222 @@
+<!-- JOHN KWESI ERBYNN
+PS/CSC/15/0006 -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Erbynn E-Shop</title>
+	<meta name="viewport" content="width=divice, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/category.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+
+<body>
+	<!-- ==== website wrapper ==== -->
+	<div id="wrapper">
+
+
+		<!-- ==== entire header ==== -->
+		<div id="header">
+			<div id="subheader"><!-- sub header -->
+				<div class="container">
+					<p>World best fastest auction website</p>
+					<a href="#">Help</a>
+					<a href="#">Download App</a>	
+				</div>
+			</div> <!-- end of sub header -->
+			<div id="main-header">	<!-- main sub header -->
+				<div id="logo"><!-- logo and name --> 
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="60px" height="60px"></a>
+					<span id="ist"><em>pk</em></span>
+					<span id="iist"><em>Erbynn</em></span>
+				</div>	
+				<div id="search">	<!-- search area -->
+					<form action="">
+						<input class="search-area" type="text" name="text" placeholder="Search Auction">
+						<input class="search-btn" type="submit" name="submit" value="SEARCH">
+					</form>
+				</div>	
+
+				<div id="user-menu"><!-- user menu -->
+					<li><a href="login.html">Login</a></li>
+					<li><a href="sign-out.html">Sign Up</a></li>
+				</div>
+			</div>	<!-- end of main sub header -->
+		
+			<!-- navigation -->
+			<div id="navigation">
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="appliance-category.html">Appliances</a>
+					<a href="fashion-category.html">Fashion</a>
+					<a href="learning-materials-category.html">Learning Materials</a>
+					<a href="about-us.html">About Us</a>
+					<a href="#section3">Contact Us</a>
+				</nav>
+			</div>
+		</div>		<!-- ====end of entire header==== -->
+
+
+		<!-- =====entire main body content ===== -->
+		<div>
+			<div id="about-us-title"> <!-- about Us heading -->
+				<div class="heading-row"><br><h1 width="20%" align="center">About Us</h1></div>
+				<div><hr width="20%"></div>
+			</div>
+
+			<div id="image-row"> <!-- map -->
+				<a href="googlemap.com" target="_blank"><img src="images/map.jpg" alt="your browser does not support the MAP, kindly open the website with google CHROME" width="100%" height="500"></a>
+			</div>
+
+			<div id="content-row1">
+				<div class="content">
+					<div align="center">
+						<h2>Our Story</h2><hr width="40%">
+						<img src="images/cat4.jpg" height="150px" width="150px" style="border-radius:30px; float: left; margin-right: 20px; margin-bottom: 15px;margin-top: 10px;">
+						<div style="text-align: justify;">
+							<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This Website Development Project was designed by John Kwesi Erbynn. I am a third year Computer Science student at the University of Cape Coast.</p>
+							<p>Mr. Erbynn was the course representative in the Website Development Course in 2018/2019 academic year. I am a Casford Hall affiliate, Casfordian. <br>I have passion for programming(especially HTML & CSS, JavaScript, PHP and Java). Contact me for project. 055 347 2114  <br>By Gods Grace, lectures went through successfully with great knowledge impacted by Mr. Franklin Amoo, thanks to him and above all, very great thanks to the all mighty God for the success</p> 
+							My life mission is to fulfill the highest, truest expression of myself as a human being. I want to fulfill the promise that the creator dreamed when he dreamed of the cells that made up me. Thank You.
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div align="center">
+						<h2>Motivational Video</h2><hr width="40%">
+						<video id="my-video" controls width="100%" height="100%">
+							<source src="images/video.mp4" type="video/mp4" >
+							<source src="images/video.ogg" type="video/ogg" >
+							<source src="images/video.webm" type="video/webm" >
+						</video>
+						<q style="color: #707070">There's never a right time to do the wrong thing and there's never a wrong time to do it right thing. Just do it right !!!</q>
+					</div>
+				</div>
+			</div>
+
+			<div id="content-row2"> <!-- the clear property to move the whole content down -->
+				<div class="content2">
+					<div id="info" align="center">
+						<h2>Our Information</h2><hr width="40%">
+						<p><b>Town:</b> Elimina</p>
+						<p><b>Location:</b> Opposite Post Office</p>
+						<p><b>Street:</b> Estate Street</p>
+						<p><b>Region:</b> Central Region, Ghana</p>
+						<p><b>Call Us:</b> +223-55-347-2114</p>
+						<p><b>Address:</b> P.O.Box 221, Elmina</p>
+						<p><b>Mail Us:</b> <a href="mailto: john.Erbynn@gmail.com">johh.erbynn@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="content2">
+					<div align="center"><h2>Message Us</h2><hr width="40%"></div>
+					<div id="form">
+						<table>
+							<tr>
+								<td>
+									<form id="fields">
+										<label for="name">Name: </label><br><input type="text" name="name" id="name" placeholder="Username" size="54%" style="padding: 5px" required="required"><br><br> <!-- label goes with id  -->
+
+										<label for="email">Email: </label><br><input type="email" name="email" id="email" placeholder="you@gmail.com" size="54%" style="padding: 5px" required="required"><br><br>
+
+										<label for="message">Message: </label><br><textarea id="message" placeholder="Type message here..." size="60%" rows="7" cols="56px" style="padding: 5px" required="required"></textarea>	<!-- rows and col are used to set size of text area -->
+
+										<div>
+											<input type="submit" value="Send" style="color: white; background-color: #404040;border:none; color:white; padding: 5px; width:60px">
+										</div>
+									</form>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>	<!-- ===== end of entire main body contents ===== -->
+	
+
+
+		<!-- ===== entire main footer ===== -->
+		<div id="footer">
+			<div class="footer-container">
+				<div class="all-section">
+					<section id="section1">
+						<center>
+							<h3>Useful Links</h3>
+							<ul id="footer-link">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="appliance-category.html">Appliances</a></li>
+								<li><a href="fashion-category.html">Fashion</a></li>
+								<li><a href="learning-materials-category.html">Learning Materials</a></li>
+								<li><a href="about-us.html">About Us</a><li>
+								<li><a href="#section3">Contact Us</a></li>
+							</ul>
+						</center>
+					</section>
+					<section id="section2">
+						<center>
+							<h3>Hours</h3><br>
+							Mon-Frid: 9:00 pm - 6:00 pm <br>
+							Saturday: 10:00 pm - 4:00 pm <br>
+							Sunday: Closed
+						</center>
+					</section>
+					<section id="section3">
+						<center>
+							<h3>Contact Us</h3><br>
+							University of Cape Coast <br>
+							Casford Hall <br>
+							Room 312, 3rd Floor <br>
+							<a href="tel:+223553472114">Phone: +223-55-347-2114 <br></a>
+							<a href="mailto: john.erbynn@gmail.com">Email: john.erbynn@gmail.com</a>
+						</center>
+					</section>
+				</div>	<!-- end of section -->
+
+
+				<div id="marquee">
+					<marquee>Call Us: 055-347-2114 ...... Prayer: <q>Thank you Lord for this very wonderful opportunity. Help me to fulfill your to do and make me great today. Amen!!</q> ...... My-Maxim: <q>I gotta learn very hard because everything I want is expensive</q></marquee>
+				</div>
+				<div><hr id="footer-hr"></div>
+				<div id="copyright">
+					Copyright &copy; 2018 <b>-</b> ALL RIGHT RESEARVED.  &nbsp;|&nbsp; Created By: pkErbynn
+				</div>
+				<div id="social-icons">
+						<b>Follow Us: </b>
+						<div class="social">
+							<a href="http://www.twitter.com" target="_blank">
+								<img src="images/twitter.gif" alt="twitter">
+							</a>
+						</div>
+						<div class="social">
+							<a href="http://flickr.com" target="_blank"">
+								<img src="images/flickr.gif" alt="flickr">
+							</a>
+						</div>
+						<div class="social">
+							<a href="http://www.facebook.com" target="_blank">
+								<img src="images/facebook.gif" alt="facebook">
+							</a>
+						</div>
+						<div class="social">
+							<a href="http://www.linkedin.com" target="_blank">
+								<img src="images/linkedin.gif" alt="linkedin"></a>
+						</div>
+				</div>
+			</div>
+		</div> 		<!-- ===== end of entire main footer ===== -->
+
+
+
+		<!-- fixed view pot top navigation -->
+		<div id="top" >
+			<a href="#wrapper">  <!-- will point to where the wrapper id is -->
+				<img src="images/top.png">
+			</a>
+		</div>
+	</div>		<!-- ===== end of wrapper ===== -->
+</body>
+</html>
+
+

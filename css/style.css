@@ -1,0 +1,384 @@
+/*JOHN KWESI ERBYNN
+PS/CSC/15/0006*/
+
+
+/*============================= Home page styling ==================================*/
+
+
+body{
+	font-family: sans-serif, verdana, arial, helvetica;
+	background-color: #99660; /*not included,but add it while coding and testing,it makes it easy to see the effect in browser  */
+}
+#subheader{
+	width: 100%;
+	height: 30px;
+	background:#162EC9;
+	color: white;
+	margin-top: -15px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+#subheader p{
+	float: left;
+	margin-top: 7px;
+}
+#subheader a{
+	float: right;
+	line-height: 30px;
+	color: white;
+	text-decoration: none;		/*removes the underlining line under the links*/
+	margin-left: 30px; 
+}
+#main-header{
+	width: 100%;
+	height: 100px;
+	background:#3C5BC9;
+	float: left;
+	margin-top: -15px;
+}
+#logo{
+	width: 250px;
+	margin-top: 10px;
+	float: left;
+}
+#ist{
+	color: black;
+	font-size: 45px;
+	font-weight: bold;
+	margin-left: 15px;
+	font-family: cursive;
+}
+#iist{
+	color: black;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: cursive;
+}
+/*search area*/
+#search{
+	width: 650px;
+	float: left;
+	padding: 20px;
+	margin-left: 50px;
+}
+.search-area{
+	width: 500px;
+	height: 50px;
+	background: white;
+	border: none;
+	border-radius: 10px; 
+	float: left;
+	padding-left: 15px;
+}
+.search-btn{
+
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background: #404040;
+	margin-left: 0px;
+}
+/*user menu*/
+#user-menu{
+	width: 300px;
+	float: right;
+	margin-top: 20px 
+}
+/*list style*/
+#user-menu li{
+	float: left;
+	width: 140px;
+	text-align: center;
+	list-style: none; /*removes the underline*/
+	font-size: 25px;
+	border-left: 1px solid black;
+}
+#user-menu li:hover{
+	font-size: 30px;
+	transition: all .5s ease;
+}
+#user-menu li a{
+	color: white;
+	text-decoration: none;
+}
+/*navigation area*/
+#navigation{
+	width: 100%;
+	height: 35px;
+	background:#3C5BC9;
+	float: left;
+	/*box-shadow: 10px 14px 50px 2px #3C5BC9;*/
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-top: 13px;
+}
+nav{
+	width: 1280px;
+	margin: 0 auto;
+}
+nav a{
+	margin-left: 35px;
+	color: white;
+	text-decoration: none;
+	padding: 6px;
+}
+nav a:hover{
+	color: #3C5BC9;
+	background-color: white;
+	transition: all .6s ease;
+	border-radius: 5px;
+}
+
+/*end of header*/
+
+#slider{
+	width: 100%;
+	height: 500px;
+	float: left;
+
+}
+#slider img{
+	width: 100%;
+	height: 100%;
+	margin-left: 0px; /*something better must be done*/
+	margin-top: 5px;
+
+}
+
+/*category heading*/
+#heading-block{
+	width: 100%;
+	height: auto;
+	float: left;
+	color: #162EC9;
+	font-size: 22px;
+	margin-bottom: 0px;
+}
+#heading-block h2{
+	line-height: 35px;
+	border-left: 20px solid #162EC9;
+	padding-left: 10px;
+}
+
+
+/*category boxes*/
+.catbox{
+	width: 220px;
+	height: 270px;
+	float: left;
+	overflow:hidden; /*hides the rest of the pic and its texts as well as scrolls*/
+	position: relative;
+	border: 3px solid #404040;
+	margin-top:auto;
+
+}
+.catbox:first-child{
+	float: left;
+}
+.catbox span{
+	width: 100%;
+	height: 35px;
+	line-height: 30px;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: block;
+	bottom: 30px;
+	position: absolute;
+	text-align: center;
+}
+.catbox img{
+	max-width: 100%;
+	transition: all .5s ease;
+}
+.catbox:hover img{
+	transform: scale(1.3, 1.3);
+	transition: all .5s ease;
+}
+.catbox:hover span{
+	color: goldenrod;
+	font-weight: bold;
+	height: 37px;
+}
+/*product styling*/
+.prod-box{
+	width: 220px;
+	height: 280px;
+	overflow: hidden;		/*hides all parts of the img which doesnt fit in the box*/
+	position: relative;
+	float: left;
+	border: 3px solid #404040;
+	margin-top:10px;
+}
+.prod-box>img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.prod-trans{
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	top: 0;			/*must set top and the rest needed for the absolute*/
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;		/*works just like the relative, but relative to its closest ancestor(prod-box)*/
+	z-index: 1;
+	opacity: 0;  /* this box lies on its ancestor(even not hovered) but cus we dont want to show, it we make its opacity=0*/
+	transition: all 0.5s ease;
+}
+.prod-box:hover .prod-trans{
+	opacity: 1; /* implies that when hovered, then the opacity=1 (visible) for every text on that black this will appear*/
+	transition: all .5s ease;  /*property, delay and duration respectively*/
+}
+.prod-feature{
+	text-align: center;
+	margin-top: -150px;		/*the negative rather implies moving to the top*/
+}
+.prod-feature .tag{ /*how the text will be ancestor will be*/
+	color: white;
+	font-family: verdana;
+}
+.prod-feature .price{ /* how the text will be ancestor will be*/
+	color: goldenrod;
+	font-weight: bold;
+}
+.prod-box:hover .prod-feature{		/*when hovered, how the prod-feature(text) on the prod-box rather takes the effect*/
+	margin-top: 100px;		/*implying shifting to down*/
+	transition: all .5s ease; /*this makes the text on the shadow slide frm top(-150) to (100) to */
+}
+.prod-feature input{
+	width: 150px;
+	height: 35px;
+	font-size: 14px;
+}
+.container #heading-block{
+	margin-top: 50px;
+	height: auto;
+}
+.offer{
+	width: 300px;
+	float: left;
+	margin-right: 190px;
+	margin-top: 0px;
+	height: auto;
+}
+.offer img{
+	width: 100%;	/*makes the whole image*/ 
+	height: 80px;
+}
+.offer:last-child{
+	margin-right: 0px;
+	float: right;
+}
+
+
+/*footer style*/
+#footer{
+	margin-top: 10px;
+	width: 100%;
+	color: white;
+	height: auto;	/*very important*/
+	background-color: #404040;
+	float: left;	/*at times when the div section doesnt take effect in browser, float: left; */
+}
+#section1{
+	/*float: left;*/
+	width: 25%;
+	float: left;
+	height: 200px;
+	/*border: 3px solid white;*/
+	text-decoration: none;
+	color: white;
+	margin-left: 25px;
+
+}
+#section1 ul li{	/*use list-style in level li*/
+	list-style: none;   /*removes the bulletin,*/
+}
+#section1 a{
+	text-decoration: none;
+	color: white;
+}
+#section1 a:hover{
+	text-decoration: underline;
+}
+
+#section2{
+	float: left;
+	width: 25%;
+	height: 200px;
+	margin-left: 130px;
+}
+#section3{
+	float: right;
+	width: 25%;
+	height: 200px;
+}
+#section3 a{
+	text-decoration: none;
+	color: white;
+}
+.all-section{
+	width: 90%;
+	text-align:  center;
+	color: white;
+	margin-right: 20px;
+}
+#footer-hr{
+	width: 100%;
+	display: block;		/*makes it go to the next line*/
+}
+#copyright{
+	float: left;
+	width: 50%;
+	padding-top: 10px;
+	color: #B0B0B0;
+	margin-left: 10px;
+}
+#social-icons{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+.social{
+	margin-left: 10px;
+	display: inline;
+}
+
+/*fixed viewpot style*/
+#top{
+	position: fixed;
+	bottom: 100px;
+	right: 0;
+	width: auto;
+	border: 5px solid blue;
+}
+#top img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*============================================about Us page =====================================================*/
+
+
+
+
+
+
+
+
+
+ /* =========menu category========*/
+ 

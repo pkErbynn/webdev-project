@@ -1,0 +1,106 @@
+/*JOHN KWESI ERBYNN
+PS/CSC/15/0006*/
+
+
+/*============================= Appliances, Fashion and Learning materials styling ==================================*/
+
+#wrapper{
+	font-family: tahoma, sans-sarif;
+}
+.cat-heading{
+	background-color: #3C5BC9; 
+	border: 4px solid #404040;
+	border-radius: 10px;
+	padding: 10px;
+}
+.category-navbar ul{
+	padding: 0px;
+	list-style-type: none;  /*removes bullet*/
+	text-align: center;		/*placed at center*/	
+}
+.category-navbar ul li{
+	display: inline;	/*makes it horizontal*/
+	background-color: #404040;
+	padding: 8px;	/*necessary*/
+}
+.category-navbar ul li a{
+	text-decoration: none;	/*removes underline*/
+	padding: .2em 1em;
+	color: #fff;
+}
+.category-navbar ul li a:hover{
+	color: #404040;
+	background-color: white;
+}
+
+
+
+.tb-caption{
+	background-color: #404040; 
+	color:white;
+	height: 30px;
+	text-align: center;
+	padding-top: 8px;
+}
+.tb-data{
+	border: 4px solid #404040;
+}
+.tb-data .item-box .item-id{
+	position: absolute; 
+	width: 100px; 
+	bottom:10px; 
+	color: white;
+	background-color: darkgoldenrod;
+	text-align:center; 
+	padding: 5px
+}
+
+
+
+ /*product item styling*/
+.item-box{
+	width: 180px;
+	height: 200px;
+	overflow: hidden;		/*hides all parts of the img which doesnt fit in the box*/
+	position: relative;
+}
+.item-box img{		/*makes the whole image zoom in or out to fit the bounds*/
+	width: 100%;
+	height: 100%;
+}
+
+.item-trans{
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;		/*works just like the relative, but relative to its closest ancestor(prod-box)*/
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;  /*makes it appears in front of item-box, -1 makes it go backwards*/
+	opacity: 0;  /* this box lies on its ancestor(even not hovered) but cus we dont want to show, it we make its opacity=0*/
+	transition: all 0.5s ease; /*/ transition for trans only*/
+}
+
+.item-box:hover .item-trans{
+	opacity: 1; /* implies that when hovered, then the opacity=1 (visible) for every text on that black this will appear*/
+	transition: all .5s ease;  /*property, delay and duration respectively*/
+}
+.item-feature{
+	text-align: center;
+	margin-top: -150px;		/*the negative rather implies moving to the top*/
+}
+.item-feature .tag{ /*how the text will be ancestor will be*/
+	color: white;
+	font-family: verdana;
+}
+.item-feature .price{ /* how the text will be ancestor will be*/
+	color: goldenrod;
+	font-weight: bold;
+}
+.item-box:hover .item-feature{		/*when hovered, how the prod-feature(text) on the prod-box rather takes the effect*/
+	margin-top: 70px;		/*implying shifting to down*/
+	transition: all .5s ease; /*this makes the text on the shadow slide frm top(-150) to down(70) to */
+}
+

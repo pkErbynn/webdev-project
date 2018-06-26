@@ -1,0 +1,64 @@
+/*JOHN KWESI ERBYNN
+PS/CSC/15/0006*/
+
+
+/*============================= Login and Sign-up styling ==================================*/
+
+body{
+	background-image: url("../images/bitcoin.png");
+	background-attachment: fixed;
+	font-family: sans-serif, Helvetica;
+}
+.heading{
+	background: #3C5BC9;
+	padding: 1px;
+	padding-bottom: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.form-container{
+	width: 360px;
+	padding: 6% 0 0;
+	margin: auto;
+}
+.form{
+	position: relative;
+	z-index: 1;
+	background: #d0d0d0;
+	padding: 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-top: 3px;
+}
+.form input, select{
+	width: 100%;
+	box-sizing: border-box;	/*if doesnt show, form field will split over the entire box*/
+	border: 0;
+	margin: 0 0 20px;
+	padding: 15px;
+}
+#submit{
+	text-transform: uppercase;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	background: #3C5BC9;
+	font-weight: bold;
+	border: 3px solid #3C5BC9;
+	color: white;
+	font-size: 14px;
+	border-radius: 2px;
+}
+
+a{
+	text-decoration: none;
+	color: #3C5BC9;
+}
+a:hover{
+	color: blue;
+}

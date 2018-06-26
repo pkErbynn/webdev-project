@@ -1,0 +1,39 @@
+/*JOHN KWESI ERBYNN
+PS/CSC/15/0006*/
+
+
+/*============================= About-Us page styling ==================================*/
+
+#about-us-title{
+	margin-top: 150px;
+}
+#image-row{
+	height: 500px;
+}
+.content {
+	width: 40%;
+	float: left;
+	margin: 10px 0px 50px 100px;
+}
+#my-video{
+	margin-top: 20px;
+}
+#content-row2{
+	clear: left;
+}
+#content-row2 a{
+	text-decoration: none;
+	color: inherit;
+}
+.content2 {
+	width: 40%;
+	height: auto;
+	float: left;
+	margin: 0px 0px 20px 100px;
+}
+#form{
+	font-weight: bold;
+}
+#fields{
+	margin-left: 40px;
+}

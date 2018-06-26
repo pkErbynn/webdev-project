@@ -1,0 +1,56 @@
+<!-- JOHN KWESI ERBYNN
+PS/CSC/15/0006 -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>sign-out</title>
+	<link rel="stylesheet" type="text/css" href="css/account.css">
+</head>
+<body>
+	<div class="form-container">
+
+		<div class="heading"> 
+			<p>Pk Erbynn</p> 
+			<img src="images/logo.png" alt="logo" width="50px" height="50px">
+		</div>
+
+		<div class="form">
+			<h2 align="center" style="color: #3C5BC9">Sign up</h2><hr><br>
+
+			<form class="form-register" action="login.html" onsubmit="return validation()">
+				<div id="usernamediv"></div>  
+				<input type="text" placeholder="Username" name="username" id="username">
+
+				<div id="emaildiv"></div>
+				<input type="email" placeholder="Email Address" name="email" id="email">
+
+				<div id="mobilenumberdiv"></div>
+				<input type="text" placeholder="Mobile Number" name="mobilenumber" id="mobilenumber">
+
+				<div id="passworddiv"></div>
+				<input type="password" placeholder="Password" name="password1" id="password">
+
+				<div id="confirmpassworddiv"></div>
+				<input type="password" placeholder="Confirm Password" name="confirmpassword" id="confirmpassword">
+
+				<input type="submit" value="Sign up" name="submit" id="submit">
+
+				<input type="reset" value="Clear Form" name="reset" id="reset" style="color:#3C5BC9; border: 1px solid white ">
+
+				<p class="message" align="center"> Already have an account? <a href="login.html">Login>></a></p>
+			</form>
+		</div>
+	</div>
+
+
+<!-- =============================external javaScript============================== -->
+	<script type="text/javascript" src="js/javascript.js"></script>
+<!-- =============================end external javaScript============================== -->
+
+
+</body>
+</html>
